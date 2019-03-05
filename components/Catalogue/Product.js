@@ -55,7 +55,7 @@ class Product extends React.PureComponent {
           </NavLink>
           <p>{this.props.info.price}</p>
           <input type='number' step = "1" min = "0" defaultValue = {1} title = "Кол-во" ref = {this.setNewQTYRef} />
-          <input type = "button" value = "add" onClick = {this.addIntoCart} />
+          <input type = "button" value = "add" onClick = {this.addIntoCart} name = "buttonCartAdd" />
         </div>          
     );
 
