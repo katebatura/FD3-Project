@@ -1,0 +1,12 @@
+
+.auto_title {
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.description {
+    padding: 40px;
+    color: black;
+    font-size: 18px;
+}

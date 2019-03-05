@@ -1,0 +1,64 @@
+.contacts-map {
+    width: 100%;
+}
+.content__contacts {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.feedback-form__container {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.feedback-form__container div {
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.feedback-input {
+	width: 200px;
+	height: 30px;
+    padding-left: 5px;
+	line-height: 30px;
+	font-size: 18px;
+	border: 1px solid #dbdbdb;
+	border-radius: 3px;
+	outline: none;
+}
+
+.contacts__feedback-form textarea {    
+	min-width: 200px;
+	max-width: 800px;
+	width: 800px;
+	min-height: 30px;
+	max-height: 400px; 
+	height: 100px;
+	line-height: 30px;
+	padding-left: 5px;
+	font-size: 14px;
+	border: 1px solid #dbdbdb;
+	border-radius: 3px;
+    outline: none;
+    color: #888;
+}
+.contacts-title {
+	color: #888;
+	margin-top: 40px;
+	text-indent: 20px;
+}
+
+.feedback-submit {
+	margin: 20px 0;
+	color: white;
+	width: 150px;
+	height: 40px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 18px;
+	background-color: #fe9126;
+	border: 1.5px solid #fe9126;
+	border-radius: 3px;
+	outline: none;
+}

@@ -1,0 +1,22 @@
+
+.header__cart .fa-shopping-cart {
+    color: black;
+    font-size: 36px;
+    position: relative;
+    padding: 10px;
+}
+
+.cart-qty {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color:  #19bde8;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
