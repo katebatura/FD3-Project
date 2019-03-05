@@ -4,16 +4,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import {connect} from 'react-redux';
+import { productsLoadingAC, productsErrorAC, productsSetAC } from "../redux/productsAC";
+import { page_change } from "../redux/pageAC";
+
 import isoFetch from 'isomorphic-fetch';
 
-import Product from '../components/Catalogue/Product';
-
-import { productsLoadingAC, productsErrorAC, productsSetAC } from "../redux/productsAC";
+import Pagination from '../components/Pagination/Pagination';
 
 class Page_Catalogue extends React.PureComponent {
   
   static propTypes = {
     products: PropTypes.object.isRequired,
+    prodFilter: PropTypes.object.isRequired,
+    page: PropTypes.number,//from Controller
   };
 
   
@@ -41,9 +44,10 @@ class Page_Catalogue extends React.PureComponent {
             });
         }
 
+        if(this.props.page)//если page пришла из контроллера, заменим ее в редьюсере        
+          this.props.dispatch( page_change(this.props.page) );//если нету, то по умолчанию оставим - 1
+
   }
-
-
           
   render() {
 
@@ -54,22 +58,14 @@ class Page_Catalogue extends React.PureComponent {
       return "ошибка загрузки данных";
 
     if ( this.props.products.status === 3 ) {
-       
-
-      let productsArr = [];
-      let l = this.props.products.productsList.length;
-      for(let i=0; i < l; i++) {
-        let prod = this.props.products.productsList[i];
-        productsArr.push(<Product key = {prod.id} info = {prod} />)
-      }
-
+           
+      let filterProductsList = this.props.products.productsList.filter( v => v.name.indexOf(this.props.prodFilter.prodFilter) != -1 );
+      
       return (
-        <div className = "catalogue page">
-          {productsArr}
-        </div>
+        <Pagination products = {filterProductsList}  startLink = {'/catalogue'} />
       );
-
-    }   
+    
+      } 
     
   }
 
@@ -78,6 +74,7 @@ class Page_Catalogue extends React.PureComponent {
 const mapStateToProps = function (state) {
   return {    
     products: state.products,
+    prodFilter: state.prodFilter,
   };
 };
 

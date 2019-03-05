@@ -3,14 +3,18 @@ import PropTypes from 'prop-types';
 
 import {connect} from 'react-redux';
 import { productsLoadingAC, productsErrorAC, productsSetAC } from "../redux/productsAC";
+import { page_change } from "../redux/pageAC";
+
 import isoFetch from 'isomorphic-fetch';
 
-import Product from '../components/Catalogue/Product'
+import Pagination from '../components/Pagination/Pagination';
 
 class Page_Category extends React.PureComponent {
          
   static propTypes = {
     products: PropTypes.object.isRequired,
+    category: PropTypes.string.isRequired,
+    page: PropTypes.number,//from Controller2
   };
 
   
@@ -38,7 +42,11 @@ class Page_Category extends React.PureComponent {
             });
         }
 
+        if(this.props.page)//если page пришла из контроллера, заменим ее в редьюсере        
+          this.props.dispatch( page_change(this.props.page) );//если нету, то по умолчанию оставим - 1
+
   }
+  
 
   render() {
 
@@ -50,20 +58,14 @@ class Page_Category extends React.PureComponent {
 
     if ( this.props.products.status === 3 ) {
 
-      let category = this.props.match.params.category;
-
-      let prodData = this.props.products.productsList.filter( prod => prod.category == category );
-
-      let productsArr = [];
+      let prodData = this.props.products.productsList.filter( prod => prod.category == this.props.category );
       let l = prodData.length;
-      for(let i=0; i < l; i++) {
-        let prod = prodData[i];
-        productsArr.push(<Product key = {prod.id} info = {prod} />)
-      }
 
       return (
         <div className = "catalogue page">
-          {l > 0 ? productsArr : <span>нет продуктов данной категории</span>}
+          {l > 0 ? 
+            <Pagination products = {prodData} startLink = {'/catalogue/' + this.props.category} /> : 
+            <span>нет продуктов данной категории</span>}
         </div>
       );
     

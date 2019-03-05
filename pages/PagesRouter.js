@@ -4,11 +4,11 @@ import { Route } from 'react-router-dom';
 
 import Page_Main from './Page_Main';
 import Page_Catalogue from './Page_Catalogue';
-import Page_Category from './Page_Category';
-import Page_Product from './Page_Product';
 import Page_About from './Page_About';
 import Page_Contacts from './Page_Contacts';
 import Page_Cart from './Page_Cart';
+import Page_Controller from './Page_Controller';
+import Page_Controller2 from './Page_Controller2';
 
 class PagesRouter extends React.Component {
           
@@ -18,8 +18,8 @@ class PagesRouter extends React.Component {
       <div>
         <Route path="/" exact component={Page_Main} />
         <Route path="/catalogue" exact component={Page_Catalogue} />
-        <Route path="/catalogue/:category" exact component={Page_Category} />
-        <Route path="/catalogue/:category/:prod" component={Page_Product} />
+        <Route path="/catalogue/:param" exact component={Page_Controller} />
+        <Route path="/catalogue/:param/:param2" exact component={Page_Controller2} />
         <Route path="/about" component={Page_About} />
         <Route path="/contacts" component={Page_Contacts} />
         <Route path="/cart" component={Page_Cart} />

@@ -34,5 +34,114 @@
         "price": 8.09,
         "img": "./img/TOTAL-QUARTZ-9000-ENERGY-0W-30-5-151522.jpg"  , 
         "category": "transmission-oils" 
-    }  
+    },
+    { "name": "Набор ёлочных игрушек", 
+        "id": 7,  
+        "price": 12.50, 
+        "img": "./img/TOTAL-QUARTZ-9000-ENERGY-0W-30-5-151522.jpg", 
+        "category": "compressor-oils" 
+      }, 
+      { "name": "Подвеска новогодняя", 
+        "id": 8 ,
+        "price": 6.80,
+        "img": "./img/TOTAL-QUARTZ-9000-ENERGY-0W-30-5-151522.jpg", 
+        "category": "compressor-oils"   
+      }, 
+      { "name": "Фигура под ёлку 'Дед Мороз на лыжах'",
+          "id": 9,
+          "price": 24.66,
+          "img": "./img/TOTAL-QUARTZ-9000-ENERGY-0W-30-5-151522.jpg" , 
+          "category": "industrial-oils"  
+      },
+      { "name": "Венок Зимнее волшебство",
+          "id": 24,
+          "price": 34.48,
+          "img": "./img/TOTAL-QUARTZ-9000-ENERGY-0W-30-5-151522.jpg" , 
+          "category": "motor-oils" 
+      }, 
+      { "name": "Елочная игрушка 'Олененок'",
+          "id": 10 ,
+          "price": 10.20,
+          "img": "./img/TOTAL-QUARTZ-9000-ENERGY-0W-30-5-151522.jpg"  , 
+          "category": "motor-oils" 
+      }, 
+      { "name": "Подвеска новогодняя Совушка",
+          "id": 11,
+          "price": 8.09,
+          "img": "./img/TOTAL-QUARTZ-9000-ENERGY-0W-30-5-151522.jpg"  , 
+          "category": "transmission-oils" 
+      },
+      { "name": "Набор ёлочных игрушек", 
+        "id": 12,  
+        "price": 12.50, 
+        "img": "./img/TOTAL-QUARTZ-9000-ENERGY-0W-30-5-151522.jpg", 
+        "category": "compressor-oils" 
+      }, 
+      { "name": "Подвеска новогодняя", 
+        "id": 13 ,
+        "price": 6.80,
+        "img": "./img/TOTAL-QUARTZ-9000-ENERGY-0W-30-5-151522.jpg", 
+        "category": "compressor-oils"   
+      }, 
+      { "name": "Фигура под ёлку 'Дед Мороз на лыжах'",
+          "id": 14,
+          "price": 24.66,
+          "img": "./img/TOTAL-QUARTZ-9000-ENERGY-0W-30-5-151522.jpg" , 
+          "category": "industrial-oils"  
+      },
+      { "name": "Венок Зимнее волшебство",
+          "id": 15,
+          "price": 34.48,
+          "img": "./img/TOTAL-QUARTZ-9000-ENERGY-0W-30-5-151522.jpg" , 
+          "category": "motor-oils" 
+      }, 
+      { "name": "Елочная игрушка 'Олененок'",
+          "id": 16 ,
+          "price": 10.20,
+          "img": "./img/TOTAL-QUARTZ-9000-ENERGY-0W-30-5-151522.jpg"  , 
+          "category": "motor-oils" 
+      }, 
+      { "name": "Подвеска новогодняя Совушка",
+          "id": 17,
+          "price": 8.09,
+          "img": "./img/TOTAL-QUARTZ-9000-ENERGY-0W-30-5-151522.jpg"  , 
+          "category": "transmission-oils" 
+      },
+      { "name": "Набор ёлочных игрушек", 
+        "id": 18,  
+        "price": 12.50, 
+        "img": "./img/TOTAL-QUARTZ-9000-ENERGY-0W-30-5-151522.jpg", 
+        "category": "compressor-oils" 
+      }, 
+      { "name": "Подвеска новогодняя", 
+        "id": 19 ,
+        "price": 6.80,
+        "img": "./img/TOTAL-QUARTZ-9000-ENERGY-0W-30-5-151522.jpg", 
+        "category": "compressor-oils"   
+      }, 
+      { "name": "Фигура под ёлку 'Дед Мороз на лыжах'",
+          "id": 20,
+          "price": 24.66,
+          "img": "./img/TOTAL-QUARTZ-9000-ENERGY-0W-30-5-151522.jpg" , 
+          "category": "industrial-oils"  
+      },
+      { "name": "Венок Зимнее волшебство",
+          "id": 21,
+          "price": 34.48,
+          "img": "./img/TOTAL-QUARTZ-9000-ENERGY-0W-30-5-151522.jpg" , 
+          "category": "motor-oils" 
+      }, 
+      { "name": "Елочная игрушка 'Олененок'",
+          "id": 22 ,
+          "price": 10.20,
+          "img": "./img/TOTAL-QUARTZ-9000-ENERGY-0W-30-5-151522.jpg"  , 
+          "category": "motor-oils" 
+      }, 
+      { "name": "Подвеска новогодняя Совушка",
+          "id": 23,
+          "price": 8.09,
+          "img": "./img/TOTAL-QUARTZ-9000-ENERGY-0W-30-5-151522.jpg"  , 
+          "category": "transmission-oils" 
+      }       
+
 ]

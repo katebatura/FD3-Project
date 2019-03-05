@@ -7,6 +7,7 @@ import PagesLinks from '../../pages/PagesLinks';
 
 import Header_Cart from './Header_Cart';
 import Logo from './Logo';
+import Search from './Search';
 
 import './Header.css';
 
@@ -30,7 +31,7 @@ class Header extends React.Component {
               <div className = "header_main-menu">
                 <PagesLinks />
               </div>          
-              <div className = "search">Search</div>
+              <div className = "search"><Search /></div>
             </div>          
           </div>
           

@@ -12,6 +12,7 @@ class Page_Product extends React.PureComponent {
           
   static propTypes = {
     products: PropTypes.object.isRequired,
+    prodId: PropTypes.string.isRequired, //передан из родительского компонента
   };
 
   
@@ -51,8 +52,7 @@ class Page_Product extends React.PureComponent {
 
     if ( this.props.products.status === 3 ) {
 
-      let prodId = parseInt(this.props.match.params.prod);
-
+      let prodId = +this.props.prodId;
       let prodData = this.props.products.productsList.find( c => c.id == prodId );
 
       return (
