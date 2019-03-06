@@ -20,8 +20,12 @@ class Header extends React.Component {
         <header>
           <div className="header-container">
             <Logo />      
-            <div className="header__tel">
+            <div className="header__info">
               <p>Закажите онлайн или по телефону: +375 (29) 682 10 32</p>
+            </div>
+            <div className="header__info">
+              <p>Время работы 09:00-19:00</p>
+              <p>Без выходных</p>
             </div>
             <Header_Cart />
           </div>
@@ -31,7 +35,7 @@ class Header extends React.Component {
               <div className = "header_main-menu">
                 <PagesLinks />
               </div>          
-              <div className = "search"><Search /></div>
+              <div><Search /></div>
             </div>          
           </div>
           

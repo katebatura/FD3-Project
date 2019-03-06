@@ -23,7 +23,7 @@ class PaginationItem extends React.Component {
   
   render() {
     return (
-        <li>
+        <li className = "pagination-item">
           <NavLink to = {this.props.num != 1 ? 
               this.props.startLink + '/' + this.props.num + "page" : this.props.startLink} onClick = {this.changePage} >
             {this.props.num}

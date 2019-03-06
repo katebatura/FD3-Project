@@ -50,7 +50,15 @@ footer .footer_shadow {
     color: #19bde8;
 }
 .footer-nav__block .main-menu a:hover {
-    color: gray;
+    animation: footer-navLink-hover .5s forwards;
+}
+@keyframes footer-navLink-hover {
+    0% {
+        color: #19bde8;
+    }
+    100% {
+        color: gray;
+    }
 }
 
 .footer-copyright {

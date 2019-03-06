@@ -10,11 +10,14 @@ class Page_About extends React.PureComponent {
     return (
       <div  className = "about page">
         <h1 className="page-title">О компании:</h1>
+
         <div className = "breadcrumbs-container">
           <NavLink to="/" exact className="breadcrumbs">Главная </NavLink>
           <span> &rarr; </span>
           <NavLink to="/about" className="breadcrumbs">О нас</NavLink>
         </div>
+        <hr />
+        
       </div>
     );
     

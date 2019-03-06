@@ -69,4 +69,8 @@ header {
     color: #000;
 }
 
+.header__info {
+    text-align: center;
+}
+
 

@@ -13,12 +13,16 @@ class Page_Contacts extends React.PureComponent {
 
     return (
       <div className = "contacts page">
+
         <h1 className="page-title">Контакты:</h1>
+
         <div className = "breadcrumbs-container">
           <NavLink to="/" exact className="breadcrumbs">Главная </NavLink>
-          <span> &rarr; </span>
+          <span className="breadcrumbs-arr" > &rarr; </span>
           <NavLink to="/contacts" className="breadcrumbs">Контакты</NavLink>
         </div>
+        <hr />
+
         <div className="content__contacts">
 					<h3 className="page-subtitle"> Время работы магазина:</h3>
 					<p className="text">понедельник - пятница: с 9.00 до 19.00 </p>
@@ -29,7 +33,8 @@ class Page_Contacts extends React.PureComponent {
 					<p className="text">+375 (29) 682 10 32</p>
           <p className = "text">Прием заказов по телефону с 9.00 до 21.00</p>
 					<p className="text">Заказы через сайт принимаются круглосуточно.</p>
-				</div>        
+				</div>    
+				    
 				<h2 className="page-subtitle"> Карта проезда:</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.3292759730634!2d27.47996631582791!3d53.89035118009663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbdab010fa1fd7%3A0xbf2f2817fa302745!2z0YPQuy4g0JPRg9GA0YHQutC-0LPQviAz0LEsINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1550439153916" width="600" height="450" frameBorder="0" allowFullScreen className = "contacts-map" ></iframe>
 

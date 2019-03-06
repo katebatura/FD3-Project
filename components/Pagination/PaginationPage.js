@@ -7,7 +7,9 @@ import { page_change } from "../../redux/pageAC";
 import PaginationItem from './PaginationItem';
 import Product from '../Catalogue/Product';
 
-class Pagination extends React.PureComponent {
+import './PaginationPage.css';
+
+class PaginationPage extends React.PureComponent {
          
   static propTypes = {
     products: PropTypes.array.isRequired, //передан из родительского компонента
@@ -46,7 +48,7 @@ class Pagination extends React.PureComponent {
 
     return(
         <div className = "catalogue page">
-          <ul>
+          <ul className = "pagination">
               {pageArr}
           </ul>
           {productsArr}
@@ -62,4 +64,4 @@ const mapStateToProps = function (state) {
   };
 };
 
-export default connect(mapStateToProps)(Pagination);
+export default connect(mapStateToProps)(PaginationPage);

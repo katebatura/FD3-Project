@@ -2,7 +2,6 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { NavLink } from 'react-router-dom';
 
 import {connect} from 'react-redux';
 import { prod_add, sum_qty } from '../../redux/cartAC';
@@ -15,11 +14,13 @@ class ProdInfoPage extends React.PureComponent {
   
   static propTypes = { 
     info: PropTypes.shape({
-        id: PropTypes.number.isRequired,
-        img: PropTypes.string.isRequired,
+       // id: PropTypes.number.isRequired,
         name: PropTypes.string.isRequired,
+        //brand: PropTypes.string.isRequired,
+        img: PropTypes.string.isRequired,
         price: PropTypes.number.isRequired,
         category: PropTypes.string.isRequired,
+        //description: PropTypes.string.isRequired,
       }),
   };
 
@@ -39,10 +40,10 @@ class ProdInfoPage extends React.PureComponent {
     let sum = qty * this.props.info.price;
     let info = {...this.state.info, qty: qty, sum: sum};
 
-    this.props.dispatch( prod_add(this.state.info.id, info) ); //добавляем в корзину
+    this.props.dispatch( prod_add(this.state.info.name, info) ); //добавляем в корзину
     this.props.dispatch( sum_qty(qty) ); //добавляем количество продуктов в корзине для отображения в header
 
-    setLocalStorage(this.state.info.id, info);
+    setLocalStorage(this.state.info.name, info);
   }
   
   render() {

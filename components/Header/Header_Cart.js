@@ -27,7 +27,7 @@ class Header_Cart extends React.PureComponent {
     return (
     <div className="header__cart">
       <NavLink to="/cart" className="breadcrumbs"> 
-        <i className="fa fa-shopping-cart">
+      <i className="fas fa-cart-arrow-down">
         {
           this.props.selectedProducts.productsQTY != 0 ?
           <div className = "cart-qty">{this.props.selectedProducts.productsQTY}</div> : null

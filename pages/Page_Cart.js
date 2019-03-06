@@ -36,11 +36,14 @@ class Page_Cart extends React.PureComponent {
     return (
       <div className = "cart page">
         <h1 className="page-title">Корзина:</h1>
+
         <div className = "breadcrumbs-container">
           <NavLink to="/" exact className="breadcrumbs">Главная </NavLink>
           <span> &rarr; </span>
           <NavLink to="/cart" className="breadcrumbs"> Корзина</NavLink>
         </div>
+        <hr />
+        
         {
           l == 0 ? 
           <Cart_Empty /> : <Cart_Full />          

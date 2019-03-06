@@ -1,0 +1,626 @@
+﻿ [
+				{
+					"name": "AZOLLA ZS 32",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "1052,94",
+					"description": "Гидравлическое масло",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "AZOLLA ZS 32 20L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "146,47",
+					"description": "Гидравлическое жидкость",
+					"imgUrl": "./img/AZOLLA ZS 32 20L.jpg"
+				},
+				{
+					"name": "AZOLLA ZS 46 208L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "1041,90",
+					"description": "Гидравлическая масло (208л.=182,42 кг.)",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "AZOLLA ZS 46 20L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "135,17",
+					"description": "Гидравлическое масло",
+					"imgUrl": "./img/AZOLLA ZS 46 20L.png"
+				},
+				{
+					"name": "AZOLLA ZS 46 20L GREASE",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "145,81",
+					"description": "Смазка для механизмов",
+					"imgUrl": "./img/AZOLLA ZS 46 20L.jpg"
+				},
+				{
+					"name": "AZOLLA ZS 68 208L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "1077,72",
+					"description": "Гидравлическое масло",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "AZOLLA ZS 68 20L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "160,22",
+					"description": "Масло гидравлическое",
+					"imgUrl": "./img/AZOLLA ZS 68 20L.jpg"
+				},
+				{
+					"name": "CARTER EP 150 208L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "1302,49",
+					"description": "Минеральное редукторное масло",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "CARTER EP 220 208L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "1337,63",
+					"description": "Масло редукторное",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "CARTER EP 220 20L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "188,14",
+					"description": "Смазка для подшипников",
+					"imgUrl": "./img/CARTER EP 220 20L.jpg"
+				},
+				{
+					"name": "CARTER SH 150 208L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "4739,95",
+					"description": "Масло редукторное синтетическое",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "CARTER SH 220 208L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "5053,71",
+					"description": "Масло редукторное синтетическое",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "CARTER SH 220 20L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "502,81",
+					"description": "Масло редукторное синтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "CARTER SY 220 20L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "443,75",
+					"description": "Масло трансмиссионное синтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "CARTER SY 460 20L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "487,08",
+					"description": "Масло трансмиссионное синтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "CORTIS SHT 200 20L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "567,63",
+					"description": "Cинтетическое масло для цепей",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "CORTIS XHT 245 205L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "7068,79",
+					"description": "Масло высокотемпературное синтетическое",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "DROSERA MS 10 20L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "172,31",
+					"description": "Масло для металлорежущих станков",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "DROSERA MS22 20L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "198,02",
+					"description": "Масло для металлорежущих станков",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "EQUIVIS XLT 22 208L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "3033,31",
+					"description": "Жидкость смазочная гидравлическая",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "EQUIVIS ZS 32 20L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "168,34",
+					"description": "Жидкость смазочная гидравлическая",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "EQUIVIS ZS 46 208L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "1182,87",
+					"description": "Жидкость смазочная гидравлическая",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "EQUIVIS ZS 46 20L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "156,99",
+					"description": "Жидкость смазочная гидравлическая",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "NATERIA MJ 40 208L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "2799,85",
+					"description": "Масло для газовых двигателей",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "NATERIA ML 406 208L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "2254,41",
+					"description": "Масло для газовых двигателей",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "NATERIA MP 40 208L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "2424,38",
+					"description": "Масло для газовых двигателей",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "TIXO STAINLESS 22 20L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "114,74",
+					"description": "Масло швейное",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "AGRIHYD HVLP-D 46 20L",
+					"brand": "CLAAS",
+					"category": "Масло для сельскохозяйственной техники",
+					"price": "276,09",
+					"description": "Жидкость смазочная гидравлическая",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "AGRISHIFT BLS 90 20L",
+					"brand": "CLAAS",
+					"category": "Масло для сельскохозяйственной техники",
+					"price": "360,45",
+					"description": "Масло трансмиссионное минеральное",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "AGRISHIFT MT 80W90 20L",
+					"brand": "CLAAS",
+					"category": "Масло для сельскохозяйственной техники",
+					"price": "285,5",
+					"description": "Масло трансмиссионное минеральное",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "AGRISHIFT XE 20L",
+					"brand": "CLAAS",
+					"category": "Масло для сельскохозяйственной техники",
+					"price": "502,24",
+					"description": "Масло трансмиссионное минеральное",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "TP MAX 10W40 208L",
+					"brand": "TOTAL",
+					"category": "Масло для сельскохозяйственной техники",
+					"price": "1709,33",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "TP MAX 10W40 20L",
+					"brand": "TOTAL",
+					"category": "Масло для сельскохозяйственной техники",
+					"price": "191,31",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "RACING 2T 1L",
+					"brand": "TOTAL",
+					"category": "Моторное масло 2-х и 4-х тактовых двигателей мотоциклов, лодок, скутеров",
+					"price": "20,72",
+					"description": "Масло моторное синтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "RACING 4T 10W50 1L",
+					"brand": "TOTAL",
+					"category": "Моторное масло 2-х и 4-х тактовых двигателей мотоциклов, лодок, скутеров",
+					"price": "19,65",
+					"description": "Масло моторное синтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "SCOOTER 2T 1L",
+					"brand": "TOTAL",
+					"category": "Моторное масло 2-х и 4-х тактовых двигателей мотоциклов, лодок, скутеров",
+					"price": "14,89",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "SPECIAL 2T 1L",
+					"brand": "TOTAL",
+					"category": "Моторное масло 2-х и 4-х тактовых двигателей мотоциклов, лодок, скутеров",
+					"price": "13,6",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "SPECIAL 4T 20W50 1L",
+					"brand": "TOTAL",
+					"category": "Моторное масло 2-х и 4-х тактовых двигателей мотоциклов, лодок, скутеров",
+					"price": "13,42",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "RUBIA POLYTRAFIC 10W40 208L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для грузовых автомобилей",
+					"price": "1957,56",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "RUBIA POLYTRAFIC 10W40 20L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для грузовых автомобилей",
+					"price": "185,25",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "RUBIA POLYTRAFIC 10W40 20L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для грузовых автомобилей",
+					"price": "185,25",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "RUBIA S 30 20L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для грузовых автомобилей",
+					"price": "148,73",
+					"description": "Масло моторное минеральное",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "RUBIA TIR 6400 15W40 208L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для грузовых автомобилей",
+					"price": "1437,99",
+					"description": "Масло моторное минеральное",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "RUBIA TIR 7400 15W40 208L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для грузовых автомобилей",
+					"price": "1477,03",
+					"description": "Масло моторное минеральное",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "RUBIA TIR 7400 15W40 20L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для грузовых автомобилей",
+					"price": "160,11",
+					"description": "Масло моторное минеральное",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "RUBIA TIR 7900 FE 10W30 208L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для грузовых автомобилей",
+					"price": "1938,38",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "RUBIA TIR 7900 FE 10W30 20L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для грузовых автомобилей",
+					"price": "213,69",
+					"description": "Масло моторное синтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "RUBIA TIR 8600 10W40 208L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для грузовых автомобилей",
+					"price": "2312,97",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "RUBIA TIR 8600 10W40 20L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для грузовых автомобилей",
+					"price": "234,33",
+					"description": "Масло моторное синтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "RUBIA TIR 8900 10W40 208L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для грузовых автомобилей",
+					"price": "2370,44",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "RUBIA TIR 8900 10W40 208L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "2234,1",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "RUBIA TIR 8900 10W40 20L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "239,66",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "RUBIA TIR 9200 FE 5W30 208L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "2621,18",
+					"description": "Масло моторное синтетическое",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "RUBIA TIR 9200 FE 5W30 20L",
+					"brand": "TOTAL",
+					"category": "Индустриальные масла",
+					"price": "279,4",
+					"description": "Масло моторное синтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "CLASSIC 10W40 18B 1L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "11,08",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "CLASSIC 10W40 20L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "171,81",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "CLASSIC 10W40 3B 5L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "44,87",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "CLASSIC 10W40 208L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "1556,25",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "CLASSIC 5W30 18B 1L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "16,18",
+					"description": "Масло моторное синтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "CLASSIC 5W30 3B 5L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "69,72",
+					"description": "Масло моторное синтетическое, тара - пласт.канистра 5л",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "CLASSIC 5W40  18B 1L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "14,44",
+					"description": "Масло моторное синтетическое, тара - пласт.канистра 1л",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "CLASSIC 5W40  208L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "2191,2",
+					"description": "Масло моторное синтетическое",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "CLASSIC 5W40 20L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "229,08",
+					"description": "Масло моторное синтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "CLASSIC 5W40 3B 5L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "61",
+					"description": "Масло моторное синтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "QUARTZ 7000 (SN) 10W40 60L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "522,9",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "QUARTZ 7000 10W40 (SN) 4B 4L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "39,84",
+					"description": "Масло моторное полусинтетическое, тара - пласт.кан",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "QUARTZ 7000 10W40 1L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "12,13",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "QUARTZ 7000 10W40 208L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "1743",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "QUARTZ 7000 10W40 20L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "183,76",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "QUARTZ 7000 10W40 5L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "48,95",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "QUARTZ 7000 EGY 10W40 1L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "12,33",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "QUARTZ 7000 EGY 10W40 4L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "41,33",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "QUARTZ 7000 EGY 10W40 5L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "48,18",
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "QUARTZ 9000 0W30 18B 1L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "21,24",
+					"description": "Масло моторное синтетическое, тара - пласт.канистра 1л",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "QUARTZ 9000 5W40 18B 1L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "16,01",
+					"description": "Масло моторное синтетическое",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "QUARTZ 9000 5W40 208L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "2440,2",
+					"description": "Масло моторное синтетическое",
+					"imgUrl": "./img/bochka.jpg"
+				},
+				{
+					"name": "QUARTZ 9000 5W40 20L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "256,47",
+					"description": "Масло моторное синтетическое, тара - пласт.канист",
+					"imgUrl": "./img/"
+				},
+				{
+					"name": "QUARTZ 9000 5W40 4B 4L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для легковых автомобилей",
+					"price": "55,28",
+					"description": "Масло моторное синтетическое, тара - пласт.канист",
+					"imgUrl": "./img/"
+				}
+			]

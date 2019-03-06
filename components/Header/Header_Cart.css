@@ -1,5 +1,5 @@
 
-.header__cart .fa-shopping-cart {
+.header__cart .fa-cart-arrow-down {
     color: black;
     font-size: 36px;
     position: relative;
@@ -8,7 +8,7 @@
 
 .cart-qty {
     position: absolute;
-    top: 5px;
+    top: 0px;
     right: 0;
     width: 25px;
     height: 25px;

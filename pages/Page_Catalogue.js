@@ -2,6 +2,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 
 import {connect} from 'react-redux';
 import { productsLoadingAC, productsErrorAC, productsSetAC } from "../redux/productsAC";
@@ -9,7 +10,7 @@ import { page_change } from "../redux/pageAC";
 
 import isoFetch from 'isomorphic-fetch';
 
-import Pagination from '../components/Pagination/Pagination';
+import PaginationPage from '../components/Pagination/PaginationPage';
 
 class Page_Catalogue extends React.PureComponent {
   
@@ -62,7 +63,21 @@ class Page_Catalogue extends React.PureComponent {
       let filterProductsList = this.props.products.productsList.filter( v => v.name.indexOf(this.props.prodFilter.prodFilter) != -1 );
       
       return (
-        <Pagination products = {filterProductsList}  startLink = {'/catalogue'} />
+        <div>
+          
+          <div className = "breadcrumbs-container">
+            <NavLink to="/" exact className="breadcrumbs">Главная </NavLink>
+            <span className="breadcrumbs-arr" > &rarr; </span>
+            <NavLink to="/catalogue" className="breadcrumbs">Каталог</NavLink>
+          </div>
+          <hr />
+
+          {filterProductsList.length > 0 ?
+            <PaginationPage products = {filterProductsList}  startLink = {'/catalogue'} />
+            :<span>Поиск не дал результатов</span>
+          }
+
+        </div>
       );
     
       } 

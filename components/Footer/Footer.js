@@ -34,7 +34,7 @@ class Footer extends React.PureComponent {
             </div>
           </div>
           <div className="footer-copyright">
-            &copy; 2018 VseMasla. All rights reserved 
+            &copy; 2019 VseMasla. All rights reserved 
           </div>
         </footer>
     );

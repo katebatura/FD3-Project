@@ -1,0 +1,28 @@
+.pagination {    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+}
+.pagination-item {
+    margin: 5px;
+    display: block;
+    width: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #000;
+    border: .5px solid gray;
+    border-radius: 4px;
+    background: #dbdbdb;
+    background: -webkit-linear-gradient(top, #dbdbdb 0%, #fefefe 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dbdbdb), color-stop(100%, #fefefe));
+    background: -moz-linear-gradient(top, #dbdbdb 0%, #fefefe 100%);
+    background: -ms-linear-gradient(top, #dbdbdb 0%, #fefefe 100%);
+    background: -o-linear-gradient(top, #dbdbdb 0%, #fefefe 100%);
+    background: linear-gradient(to bottom, #dbdbdb 0%, #fefefe 100%);
+    transition: all 0.3s ease-in-out;
+}

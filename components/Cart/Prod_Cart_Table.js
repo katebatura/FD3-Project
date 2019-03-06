@@ -16,32 +16,34 @@ class Prod_Cart_Table extends React.PureComponent {
   
   static propTypes = {
     info: PropTypes.shape({
-        id: PropTypes.number.isRequired,
+        //id: PropTypes.number.isRequired,
         img: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
         price: PropTypes.number.isRequired,
+        category: PropTypes.string.isRequired,
+        //brand: PropTypes.string.isRequired,
+        //description: PropTypes.string.isRequired,
         qty: PropTypes.number.isRequired,
         sum: PropTypes.number.isRequired,
-        category: PropTypes.string.isRequired,
       }),
   };
   
 
   deleteProduct = () => {
-    this.props.dispatch( prod_del(this.props.info.id) ); 
+    this.props.dispatch( prod_del(this.props.info.name) ); 
     this.props.dispatch( sum_qty( - this.props.info.qty) );
 
-    delLocalStorage(this.props.info.id);
+    delLocalStorage(this.props.info.name);
   }
 
   changeQty = (e) => {
     let newQTY = +e.target.value;
     let newSum = this.props.info.price * newQTY
-    this.props.dispatch( qty_add(this.props.info.id, newQTY, newSum) );
+    this.props.dispatch( qty_add(this.props.info.name, newQTY, newSum) );
     this.props.dispatch( sum_qty(newQTY - this.props.info.qty) );
 
     let newInfo = {...this.props.info, qty: newQTY, sum: newSum};
-    editLocalStorage(this.props.info.id, newInfo)
+    editLocalStorage(this.props.info.name, newInfo)
   }
   
   
@@ -51,7 +53,7 @@ class Prod_Cart_Table extends React.PureComponent {
         <tr>
           <td><input type = "button" value = "&times;" onClick = {this.deleteProduct} title = "УДАЛИТЬ" /></td>
           <td><img src = {this.props.info.img} className = "product-img" /></td>
-          <td><NavLink to = {"/catalogue/"+ this.props.info.category + "/" + this.props.info.id}>{this.props.info.name}</NavLink></td>
+          <td><NavLink to = {"/catalogue/"+ this.props.info.category + "/" + this.props.info.name}>{this.props.info.name}</NavLink></td>
           <td>{this.props.info.price}</td>
           <td>                
             <div className="CounterButton">
