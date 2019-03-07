@@ -18,12 +18,12 @@ class Prod_Cart_Table extends React.PureComponent {
   static propTypes = {
     info: PropTypes.shape({
         id: PropTypes.number.isRequired,
-        img: PropTypes.string.isRequired,
+        imgUrl: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
         price: PropTypes.number.isRequired,
         category: PropTypes.string.isRequired,
-        //brand: PropTypes.string.isRequired,
-        //description: PropTypes.string.isRequired,
+        brand: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
         qty: PropTypes.number.isRequired,
         sum: PropTypes.number.isRequired,
       }),
@@ -53,20 +53,20 @@ class Prod_Cart_Table extends React.PureComponent {
 
     return (
         <tr>
-          <td><input type = "button" value = "&times;" onClick = {this.deleteProduct} title = "УДАЛИТЬ" className = "delProd-button" /></td>
-          <td><img src = {this.props.info.img} className = "cart_img " /></td>
-          <td>
+          <td className = "td_delButton" ><input type = "button" value = "&times;" onClick = {this.deleteProduct} title = "УДАЛИТЬ" className = "delProd-button" /></td>
+          <td className = "td_img"><img src = {this.props.info.imgUrl} className = "cart_img " /></td>
+          <td className = "td_prodName">
             <NavLink to = {"/catalogue/"+ this.props.info.category + "/" + this.props.info.id} className = "cart_prodName " >
-              {this.props.info.id}
+              {this.props.info.name}
             </NavLink>
           </td>
-          <td><div className = "cart_prodPrice" >{this.props.info.price + " руб."}</div></td>
-          <td>                
+          <td className = "td_prodPrice"><div className = "cart_prodPrice" >{this.props.info.price + " руб."}</div></td>
+          <td className = "td_qty">                
             <div className="CounterButton">
               <input type='number' step = "1" min = "0" defaultValue = {this.props.info.qty} onChange={this.changeQty} title = "Кол-во"  className = "prodQty-button"/>
             </div>
           </td>
-          <td><div className = "cart_prodPrice">{this.props.info.sum + " руб."}</div></td>
+          <td className = "td_sum"><div className = "cart_prodPrice">{this.props.info.sum + " руб."}</div></td>
         </tr>
         
     );

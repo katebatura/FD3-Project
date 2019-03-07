@@ -4,6 +4,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    color: black;
+}
+
 .main {
     max-width: 1170px;
     margin: 20px auto 30px;
@@ -20,6 +24,7 @@ body {
 .content {
     width: 70%;
     padding: 0 40px 40px;
+    box-sizing: border-box;
 }
 
 
@@ -45,4 +50,14 @@ body {
 }
 .breadcrumbs-arr {
     padding: 5px;
+}
+
+
+@media (max-width: 340px) {
+    .page-title {
+        font-size: 26px;
+    }
+    .breadcrumbs {
+        font-size: 12px;
+    }
 }

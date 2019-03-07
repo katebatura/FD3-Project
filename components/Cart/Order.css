@@ -50,3 +50,21 @@
 .invisible {
     display: none;
 }
+
+@media (max-width: 680px) {
+	.visible {
+		display: block;
+	}
+}
+
+@media (max-width: 480px) {
+	.order-textarea {  
+		max-width: 250px;
+		width: 250px;
+	}
+}
+@media (max-width: 340px) {
+	.visible {
+		font-size: 11px;
+	}
+}

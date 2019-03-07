@@ -39,11 +39,11 @@ class Cart_Full extends React.PureComponent {
             <tbody>
               <tr>
                 <th></th>
-                <th></th>
+                <th className = "th_img"></th>
                 <th>Товар</th>
-                <th>Цена</th>
-                <th>Количество</th>
-                <th>Итого</th>
+                <th className = "th_prodPrice">Цена</th>
+                <th className = "th_qty">Количество</th>
+                <th className = "th_sum">Итого</th>
               </tr>
               {productsCode}
             </tbody>

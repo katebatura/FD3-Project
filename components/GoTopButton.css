@@ -1,0 +1,37 @@
+
+#go-top {
+    position: fixed; 
+    bottom: 25px; 
+    z-index: 99999;
+    right: 70px;
+    text-align: center;
+    cursor:pointer; 
+    display:none;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, .3);
+    line-height: 40px;
+    border-radius: 50%;   
+    color: #fff; 
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  #go-top:hover {
+    background: #19bde8;
+    opacity: .6;
+  }
+
+  
+@media (max-width: 320px) { 
+    
+	#go-top {  
+    bottom: 25px; 
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+	}
+	
+}

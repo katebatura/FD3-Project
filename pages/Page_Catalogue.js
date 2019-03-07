@@ -8,6 +8,9 @@ import {connect} from 'react-redux';
 import { productsLoadingAC, productsErrorAC, productsSetAC } from "../redux/productsAC";
 import { page_change } from "../redux/pageAC";
 
+import GoTopButton from '../components/GoTopButton';
+import {goTop} from '../services/GoTop';
+
 import isoFetch from 'isomorphic-fetch';
 
 import PaginationPage from '../components/Pagination/PaginationPage';
@@ -22,6 +25,11 @@ class Page_Catalogue extends React.PureComponent {
 
   
   componentDidMount() {
+            
+    $(function() {
+      $("#go-top").scrollToTop(); //import from goTop
+      });
+      
     if(!this.props.products.productsList){
 
       this.props.dispatch( productsLoadingAC() ); // переводим раздел products стора в состояние "загружается"
@@ -76,6 +84,8 @@ class Page_Catalogue extends React.PureComponent {
             <PaginationPage products = {filterProductsList}  startLink = {'/catalogue'} />
             :<span>Поиск не дал результатов</span>
           }
+
+          <GoTopButton />
 
         </div>
       );

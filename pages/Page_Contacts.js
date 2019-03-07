@@ -4,6 +4,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 
+import GoTopButton from '../components/GoTopButton';
+import {goTop} from '../services/GoTop';
+
 import { checkNameValue, checkEmailValue, checkTelValue, checkTextValue  } from '../services/checkForm';
 
 import './Contacts.css';
@@ -20,7 +23,16 @@ class Page_Contacts extends React.PureComponent {
 		errorTel: 0, //0-нет ошибки, 1-пустое значение, 2-неверное значение
 		errorText:0, //0-нет ошибки, 1-пустое значение
 
-	}
+  }
+  
+          
+  componentDidMount() {            
+    $(function() {
+    $("#go-top").scrollToTop(); //import from goTop
+    });
+  
+}
+
 	
   
   changeName = (e)=> {
@@ -139,6 +151,10 @@ class Page_Contacts extends React.PureComponent {
 
 					</form>
 				</div>
+        
+
+        <GoTopButton />
+        
       </div>
     );
     

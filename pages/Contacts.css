@@ -79,3 +79,80 @@
 	font-size: 20px;
 	font-weight: bold;	
 }
+
+
+@media (max-width: 1280px) { 
+    
+	.feedback-textarea { 
+		max-width: 550px;
+		width: 550px;
+	}
+	
+}
+
+@media (max-width: 668px) {
+	.contacts-map {
+		height: 50%;
+	}
+	.feedback-textarea {
+		max-width: 80%;
+		width: 80%;
+	}
+	.content__contacts {
+		width: 100%;
+	}
+	.text {
+		font-size: 16px;
+	}
+
+	.feedback-submit-container{
+		width: 156px;
+		height: 46px;
+	}
+	.feedback-submit{
+		width: 150px;
+		height: 40px;
+		font-size: 16px;
+	}
+	.feedback-submit:hover, .feedback-submit:active {
+		font-size: 16px;	
+	}
+}
+
+@media (max-width: 340px) {
+    .contacts-title {
+        font-size: 14px;
+	}
+	.feedback-textarea {
+		font-size: 12px;
+		line-height: 12px;
+	}
+	.feedback-input {
+		font-size: 12px;
+		line-height: 12px;
+	}
+
+	.page-subtitle {
+		font-size: 16px;
+	}
+	.text {
+		font-size: 14px;
+	}
+	
+
+	.feedback-submit-container{
+		width: 124px;
+		height: 34px;
+	}
+	.feedback-submit{
+		width: 120px;
+		height: 30px;
+		font-size: 12px;
+		border: 2px solid white;
+		top: 2px;
+		left: 2px;
+	}
+	.feedback-submit:hover, .feedback-submit:active {
+		font-size: 12px;	
+	}
+}

@@ -3,10 +3,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 
+import GoTopButton from '../components/GoTopButton'
+import {goTop} from '../services/GoTop'
+
 import './About.css';
 
 class Page_About extends React.PureComponent {
           
+  componentDidMount() {            
+      $(function() {
+        $("#go-top").scrollToTop(); //import from goTop
+      });
+    
+  }
+
   render() {
 
     return (
@@ -30,6 +40,8 @@ class Page_About extends React.PureComponent {
             <li>Масло – это не просто очередной расходник, это показатель вашего отношения к своей технике! Выбирайте безупречное качество продукции для своих автомобилей, мотоциклов, квадроциклов, лодок, катеров, снегоходов. Мы не подведем!</li>
           </ul>
         </section>
+
+        <GoTopButton /> 
         
       </div>
     );

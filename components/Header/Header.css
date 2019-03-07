@@ -73,4 +73,156 @@ header {
     text-align: center;
 }
 
+.header-nav .toggleButton {
+    display: none;    
+}
 
+.header-nav .category-menu  {
+    display: none;
+}
+
+.catalogue-open .category-menu {
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: stretch;
+    height: 20px;
+    border-left: .5px solid gray;
+    position: absolute;
+    z-index: 1;
+    top: 55px;
+    left: 140px;
+}
+.catalogue-open .category-menu li {
+    border-bottom: .5px solid white;
+    animation: openLink .5s forwards;
+
+}
+
+.catalogue-open .category-menu li .CategoryLink{
+    display: block;
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    line-height: 14px;
+    font-size: 12px;
+    background-color:rgba(0, 0, 0, 0.7);
+
+}
+   
+.main-menu_open > .main-menu {
+    display: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: stretch;
+    height: 20px;
+    border-left: .5px solid gray;
+    position: absolute;
+    z-index: 1;
+    top: 208px;
+    left: 0;
+
+}
+.main-menu_open > .main-menu li { 
+    border-bottom: .5px solid gray;
+    animation: openLink .5s forwards;
+}
+
+@keyframes openLink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.main-menu_open > .main-menu .PageLink {   
+    display: block;
+    width: 100px;
+    height: 50px;
+    background-color:rgba(0, 0, 0, 0.9);
+}
+
+
+
+@media (max-width: 1100px) {
+    
+    .header-container .header__info{
+        font-size: 12px;
+    }
+    .header-container1 {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 860px) {
+    .header__logo {
+        line-height: 50px;
+        font-size: 45px;
+    }
+    
+    .header__logo-text {
+        line-height: 50px;
+        font-size: 45px;
+    }
+    
+    .header__logo-span {
+        font-size: 35px;
+    }
+
+    .header-container .header__info{
+        display: none;
+    }
+    
+    .header-nav .toggleButton {
+        display: inline-block;
+        height: 50px;
+        color: white;
+        text-align: center;
+        line-height: 50px;
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    .header_main-menu {
+        display: none;
+    }
+    .main-menu_open {
+        display: block;
+    }
+    
+    .main-menu_open > .main-menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-nav .toggleButton {
+        display: inline-block;
+        height: 50px;
+        color: white;
+        text-align: center;
+        line-height: 50px;
+        font-size: 25px;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 340px) {
+    .header__logo {
+        line-height: 35px;
+        font-size: 30px;
+    }
+    
+    .header__logo-text {
+        line-height: 35px;
+        font-size: 30px;
+    }
+    
+    .header__logo-span {
+        font-size: 20px;
+    }
+}

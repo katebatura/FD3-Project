@@ -29,3 +29,26 @@
 .header__cart-link:hover .cart-qty{
     background-color:  #000;
   }
+
+  
+@media (max-width: 1100px) {
+    
+  .header__cart .fa-cart-arrow-down {
+      font-size: 30px;
+  }
+}
+
+@media (max-width: 340px) { 
+  .header__cart .fa-cart-arrow-down {
+      font-size: 20px;
+  }
+  .cart-qty {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      width: 15px;
+      height: 15px;
+      line-height: 15px;
+      font-size: 10px;
+  }
+}

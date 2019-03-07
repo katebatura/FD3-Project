@@ -20,11 +20,11 @@ class Product extends React.PureComponent {
     info: PropTypes.shape({
        id: PropTypes.number.isRequired,
        name: PropTypes.string.isRequired,
-       //brand: PropTypes.string.isRequired,
-       img: PropTypes.string.isRequired,
+       brand: PropTypes.string.isRequired,
+       imgUrl: PropTypes.string.isRequired,
        price: PropTypes.number.isRequired,
        category: PropTypes.string.isRequired,
-       //description: PropTypes.string.isRequired,
+       description: PropTypes.string.isRequired,
       }),
   };
 
@@ -62,8 +62,8 @@ class Product extends React.PureComponent {
               {this.props.info.name}
             </NavLink>
           </h3>
-          <NavLink to = {"/catalogue/"+ this.props.info.category + "/" + this.props.info.id} className = "product-title">
-            <img src = {this.props.info.img} className = "product-img" />
+          <NavLink to = {"/catalogue/"+ this.props.info.category + "/" + this.props.info.id} className = "product-title product-img-container">
+            <img src = {this.props.info.imgUrl} className = "product-img" />
           </NavLink>
           <p>{this.props.info.price + " руб."}</p>
           <div className = "addCart-block">

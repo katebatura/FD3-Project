@@ -17,15 +17,15 @@ class Footer extends React.PureComponent {
         <footer className = "footer">
           <div className = "footer_shadow"></div>
           <div className = "footer-nav">
-            <div className="footer-nav__block">
+            <div className="footer-nav__block footer-nav__block1">
               <h3 className="footer-nav__title">Информация</h3>
               <PagesLinks />
             </div>
-            <div className="footer-nav__block">
+            <div className="footer-nav__block footer-nav__block2">
               <h3 className="footer-nav__title">Категории</h3>
               <CategoriesLinks />
             </div>
-            <div className="footer-nav__block">
+            <div className="footer-nav__block footer-nav__block3">
               <h3 className="footer-nav__title">Контакты</h3>
               <p>г. Минск ул. Гурского 3Б</p>
               <p>+375 (29) 682 10 32</p>

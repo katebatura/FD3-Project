@@ -6,7 +6,10 @@ import { NavLink } from 'react-router-dom';
 import {connect} from 'react-redux';
 import { prod_add, sum_qty } from '../redux/cartAC';
 
-import { checkLocalStorage, getLocalStorage } from '../services/LocalStorage'
+import { checkLocalStorage, getLocalStorage } from '../services/LocalStorage';
+
+import GoTopButton from '../components/GoTopButton';
+import {goTop} from '../services/GoTop';
 
 import Cart_Empty from '../components/Cart/Cart_Empty';
 import Cart_Full from '../components/Cart/Cart_Full';
@@ -28,6 +31,10 @@ class Page_Cart extends React.PureComponent {
         }
       };      
     }
+            
+    $(function() {
+      $("#go-top").scrollToTop(); //import from goTop
+      });
   };
           
   render() {
@@ -48,6 +55,8 @@ class Page_Cart extends React.PureComponent {
           l == 0 ? 
           <Cart_Empty /> : <Cart_Full />          
         }
+
+        <GoTopButton />
         
       </div>
     );

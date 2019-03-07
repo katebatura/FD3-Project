@@ -1,10 +1,10 @@
-.nav-categories .category-menu {    
+.main .nav-categories .category-menu {    
     padding: 0;
     margin: 0;
     max-width: 280px;
 }
 
-.nav-categories .category-menu li{   
+.main .nav-categories .category-menu li{   
     box-sizing: border-box;
     background: linear-gradient(to bottom, #dbdbdb 0%, #fefefe 100%);
     border: 2px solid #dbdbdb;
@@ -31,7 +31,7 @@
     line-height: 40px;
 }
 
-.CategoryLink{
+.main .CategoryLink{
     display: inline-block;
     max-width: 260px;
     text-indent: 0;
@@ -44,7 +44,7 @@
     font-weight: bold;
 }
 
-.CategoryLink:hover {
+.main .CategoryLink:hover {
     animation: CategoryLink-hover .5s forwards;
 }
 
@@ -54,5 +54,28 @@
     }
     100% {
         color: #19bde8;
+    }
+}
+
+
+
+
+@media (max-width: 1100px) {
+    
+    .main .nav-categories .category-menu li {
+        line-height: 30px;
+    }
+    .main .main .nav-categories a {
+        font-size: 15px;
+        height: 20px;
+    }
+}
+@media (max-width: 860px) {
+    .main .main .content {
+        width: 100%;
+    }
+    .main .nav-categories {
+        width: 0;
+        display: none;
     }
 }

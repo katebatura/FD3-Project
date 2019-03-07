@@ -152,8 +152,8 @@ class Order extends React.PureComponent {
                   <td>Доставка</td>
                   <td>
                     {this.props.cart.delivery == 2 ?
-                      'от ' + this.changeDeliverySum(this.props.cart.delivery) : 
-                      this.changeDeliverySum(this.props.cart.delivery)
+                      'от ' + this.changeDeliverySum(this.props.cart.delivery) + " руб." : 
+                      this.changeDeliverySum(this.props.cart.delivery) + " руб."
                     }
                   </td>
                 </tr> 
@@ -164,8 +164,8 @@ class Order extends React.PureComponent {
                 <th>Итого:</th>
                 <th>
                   {this.props.cart.delivery == 2 ?
-                    'от ' + roundMod(this.totalSum + this.changeDeliverySum(this.props.cart.delivery), 100)
-                    : roundMod(this.totalSum + this.changeDeliverySum(this.props.cart.delivery), 100)
+                    'от ' + roundMod(this.totalSum + this.changeDeliverySum(this.props.cart.delivery), 100) + " руб."
+                    : roundMod(this.totalSum + this.changeDeliverySum(this.props.cart.delivery), 100) + " руб."
                   }
                   {this.props.cart.delivery == 2 ?
                     <span className = "remark"><br />

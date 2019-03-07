@@ -17,13 +17,13 @@ class ProdInfoPage extends React.PureComponent {
   
   static propTypes = { 
     info: PropTypes.shape({
-       // id: PropTypes.number.isRequired,
+        id: PropTypes.number.isRequired,
         name: PropTypes.string.isRequired,
-        //brand: PropTypes.string.isRequired,
-        img: PropTypes.string.isRequired,
+        brand: PropTypes.string.isRequired,
+        imgUrl: PropTypes.string.isRequired,
         price: PropTypes.number.isRequired,
         category: PropTypes.string.isRequired,
-        //description: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
       }),
   };
 
@@ -74,9 +74,11 @@ class ProdInfoPage extends React.PureComponent {
 
         <h2 className = "productPage-title" >{this.props.info.name}</h2>
         <div className="productPage-container">
-          <img src = {this.props.info.img} className = "productPage-img" />
+          <div className = "productPage-img-container"><img src = {this.props.info.imgUrl} className = "productPage-img" /></div>
           <div className = "productPage-info">
             <p>{this.props.info.category}</p>
+            <p>{this.props.info.brand}</p>
+            <p>{this.props.info.description}</p>
             <p className="productPage-price">{this.props.info.price + " руб."}</p>
             <div className = "addCart-block">
               <input type='number' step = "1" min = "0" defaultValue = {1} title = "Кол-во" ref = {this.setNewQTYRef} className = "addQty_button" />

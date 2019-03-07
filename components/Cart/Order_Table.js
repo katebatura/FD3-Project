@@ -10,7 +10,7 @@ class Order_Table extends React.PureComponent {
   static propTypes = {
     info: PropTypes.shape({
         id: PropTypes.number.isRequired,
-        img: PropTypes.string.isRequired,
+        imgUrl: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
         price: PropTypes.number.isRequired,
         qty: PropTypes.number.isRequired,
@@ -24,7 +24,7 @@ class Order_Table extends React.PureComponent {
     return (
         <tr>
           <td>{this.props.info.name}</td>
-          <td>{this.props.info.sum}</td>
+          <td>{this.props.info.sum + " руб."}</td>
         </tr>        
     );
     

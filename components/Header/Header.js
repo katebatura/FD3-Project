@@ -13,6 +13,38 @@ import './Header.css';
 
 class Header extends React.Component {
 
+  componentDidMount() {
+      
+  $(document).ready(function(){
+    var toggleButton = document.querySelector('.toggleButton');
+    var menu = document.querySelector('.header_main-menu');    
+    var body = document.querySelector('body'); 
+    var catalogue = document.querySelector('.catalogueLink', '.header_main-menu');
+
+    body.onclick = function(e) {
+      if  (e.target == toggleButton) {
+        menu.classList.toggle('main-menu_open'); 
+        if(menu.classList.contains('main-menu_open')) menu.classList.remove('catalogue-open')  
+      }
+
+      if (e.target == catalogue && menu.classList.contains('main-menu_open') ) { 
+        if(menu.classList.contains('catalogue-open')) { 
+          menu.classList.remove('catalogue-open');
+          return
+        }           
+        e.preventDefault();
+        menu.classList.add('catalogue-open');
+      }
+      
+      if(e.target != toggleButton && e.target != catalogue){
+        menu.classList.remove('catalogue-open');
+        menu.classList.remove('main-menu_open');}
+    };
+    
+
+  });
+  }
+
     
   render() {
 
@@ -31,8 +63,9 @@ class Header extends React.Component {
           </div>
 
           <div className="header-container1">
-            <div className = "header-nav">
-              <div className = "header_main-menu">
+            <div className = "header-nav">         
+				      <i className = "fas fa-bars toggleButton"></i>
+              <div className = "header_main-menu">     
                 <PagesLinks />
               </div>          
               <div><Search /></div>
