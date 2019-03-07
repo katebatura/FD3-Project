@@ -1,0 +1,19 @@
+.productPage-container {
+    display: flex;
+    justify-content: start;
+    color: black;
+}
+.productPage-title {
+    width: 100%;
+    color: black;
+}
+
+.productPage-img {
+    width: 200px;
+    margin-right: 40px;
+}
+.productPage-price {
+    color: #19bde8;
+    font-weight: bold;
+    font-size: 24px;
+}

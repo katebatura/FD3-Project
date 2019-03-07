@@ -1,0 +1,20 @@
+.cart-table {
+    margin: 30px 0;
+    border: 1px solid #dbdbdb;
+    border-collapse: collapse;
+}
+.cart-table tr {
+    border: 1px solid #dbdbdb;
+}
+.cart-table th {
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #dbdbdb;
+}
+.cart-table td {
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}

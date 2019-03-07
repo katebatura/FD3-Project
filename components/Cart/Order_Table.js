@@ -5,8 +5,6 @@ import PropTypes from 'prop-types';
 
 import {connect} from 'react-redux';
 
-import './Order_Table.css';
-
 class Order_Table extends React.PureComponent {
   
   static propTypes = {

@@ -21,14 +21,14 @@
 	width: 200px;
 	height: 30px;
     padding-left: 5px;
-	line-height: 30px;
-	font-size: 18px;
+	line-height: 14px;
+	font-size: 14px;
 	border: 1px solid #dbdbdb;
 	border-radius: 3px;
 	outline: none;
 }
 
-.contacts__feedback-form textarea {    
+.feedback-textarea {    
 	min-width: 200px;
 	max-width: 800px;
 	width: 800px;
@@ -49,16 +49,33 @@
 	text-indent: 20px;
 }
 
-.feedback-submit {
-	margin: 20px 0;
-	color: white;
-	width: 150px;
-	height: 40px;
-	line-height: 30px;
-	text-align: center;
-	font-size: 18px;
-	background-color: #fe9126;
-	border: 1.5px solid #fe9126;
+
+.feedback-submit-container{
+	position: relative;
+	width: 206px;
+	height: 56px;
+	background-color: #19bde8;
 	border-radius: 3px;
-	outline: none;
+	margin: auto;
+}
+.feedback-submit{
+	width: 200px;
+	height: 50px;
+	padding: 0;
+	margin: 0;
+	background-color: #19bde8;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	border: 3px solid white;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	border-radius: 3px;
+}
+.feedback-submit:hover, .feedback-submit:active {
+	background-color: white;
+	color: #19bde8;		
+	font-size: 20px;
+	font-weight: bold;	
 }

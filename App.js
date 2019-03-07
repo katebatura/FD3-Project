@@ -30,7 +30,7 @@ ReactDOM.render(
 
         <main className = "main">
           <div className = "nav-categories">
-              <CategoriesLinks />
+            <CategoriesLinks />
           </div>
           <div className = "content">
             <PagesRouter />

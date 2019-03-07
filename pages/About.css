@@ -1,0 +1,6 @@
+.about-list {
+    list-style-type: square;
+}
+.about-list li {
+    margin: 30px 0;
+}

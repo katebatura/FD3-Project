@@ -22,10 +22,12 @@ class PaginationItem extends React.Component {
   }
   
   render() {
+    
     return (
         <li className = "pagination-item">
           <NavLink to = {this.props.num != 1 ? 
-              this.props.startLink + '/' + this.props.num + "page" : this.props.startLink} onClick = {this.changePage} >
+              this.props.startLink + '/' + this.props.num + "page" : this.props.startLink} onClick = {this.changePage}
+              className = {this.props.num == this.props.page.page ? "activePage" : null}>
             {this.props.num}
           </NavLink>
         </li>          

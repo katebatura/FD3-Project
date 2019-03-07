@@ -43,15 +43,20 @@ class PaginationPage extends React.PureComponent {
     let productsArr = [];
     for(let i=0; i < prodData.length; i++) {
       let prod = prodData[i];
-      productsArr.push(<Product key = {prod.id} info = {prod} />)
+      productsArr.push(<Product key = {prod.id} info = {prod} page = {this.props.page.page} />)
     }
 
     return(
         <div className = "catalogue page">
+        {pageArr.length > 1? 
           <ul className = "pagination">
               {pageArr}
           </ul>
-          {productsArr}
+          :null
+        }
+          <div className = "products-container">
+            {productsArr}
+          </div>          
         </div>
     );
   }

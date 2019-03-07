@@ -2,17 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 
-
-import {connect} from 'react-redux';
-import { prod_filter } from "../redux/prodFilterAC";
+import {events} from '../services/events';
 
 import './PagesLinks.css';
 
 class PagesLinks extends React.Component {
-
-  removeFilter = ()=>{
-    this.props.dispatch( prod_filter('') );
-  }
           
   render() {
 
@@ -30,11 +24,5 @@ class PagesLinks extends React.Component {
 
 }
      
-const mapStateToProps = function (state) {
-  return {    
-    products: state.products,
-  };
-};
-
-export default connect(mapStateToProps)(PagesLinks);
+export default PagesLinks;
     

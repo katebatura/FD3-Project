@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 import {connect} from 'react-redux';
 import { prod_add, sum_qty } from '../redux/cartAC';
 
-import { checkLocalStorage, getLocalStorage } from '../LocalStorage/LocalStorage'
+import { checkLocalStorage, getLocalStorage } from '../services/LocalStorage'
 
 import Cart_Empty from '../components/Cart/Cart_Empty';
 import Cart_Full from '../components/Cart/Cart_Full';

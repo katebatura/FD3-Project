@@ -4,6 +4,7 @@
     font-size: 36px;
     position: relative;
     padding: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 .cart-qty {
@@ -19,4 +20,12 @@
     line-height: 25px;
     font-size: 14px;
     font-weight: bold;
+    transition: all 0.3s ease-in-out;
 }
+.header__cart-link:hover .fa-cart-arrow-down{
+  color:  #19bde8;
+}
+
+.header__cart-link:hover .cart-qty{
+    background-color:  #000;
+  }

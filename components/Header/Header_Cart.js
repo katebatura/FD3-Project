@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 import {connect} from 'react-redux';
 
-import { clearLocalStorage } from '../../LocalStorage/LocalStorage'
+import { clearLocalStorage } from '../../services/LocalStorage'
 
 import './Header_Cart.css';
 
@@ -26,7 +26,7 @@ class Header_Cart extends React.PureComponent {
 
     return (
     <div className="header__cart">
-      <NavLink to="/cart" className="breadcrumbs"> 
+      <NavLink to="/cart" className="header__cart-link"> 
       <i className="fas fa-cart-arrow-down">
         {
           this.props.selectedProducts.productsQTY != 0 ?
