@@ -1,7 +1,6 @@
 ﻿"use strict";
 
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import PagesLinks from '../../pages/PagesLinks';
 

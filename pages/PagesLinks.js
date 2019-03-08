@@ -1,10 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 
 import CategoriesLinks from './CategoriesLinks';
 
-import {events} from '../services/events';
 
 import '../styles/pages/PagesLinks.css';
 

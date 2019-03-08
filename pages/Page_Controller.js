@@ -1,9 +1,6 @@
 "use strict";
 
 import React from 'react';
-import PropTypes from 'prop-types';
-
-import Page_Product from './Page_Product';
 import Page_Category from './Page_Category';
 import Page_Catalogue from './Page_Catalogue';
 

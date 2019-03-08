@@ -1,7 +1,6 @@
 "use strict";
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 
 import GoTopButton from '../components/GoTopButton';
