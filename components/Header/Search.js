@@ -32,17 +32,23 @@ class Search extends React.Component {
       this.props.dispatch( prod_filter(this.newProdFilterRef.value) );
     }
 
+    search = (e) => {
+      e.preventDefault();
+      this.filterProds(e);
+    }
+
     render() {
 
     return (
-        <div className = "search">
+        <form className = "search" onSubmit = {this.search}>
           <input type="text" name="search" id="search" className="search-input"  ref = {this.setNewProdFilterRef}
-            placeholder = {this.state.failedProdFilter ? "Введите название продукта" : null} />
+            placeholder = {this.state.failedProdFilter ? "Введите название продукта" : null} 
+            />
        
-            <NavLink to = "/catalogue"  onClick =  {this.filterProds} className = "search-button" >
+            <NavLink to = "/catalogue"  onClick = {this.filterProds} className = "search-button" >
               <i className="fas fa-search"></i>
             </NavLink>
-        </div>
+        </form>
     );
 
   }

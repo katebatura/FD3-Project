@@ -8,7 +8,7 @@ import { createStore } from 'redux';
 import combinedReducer from '../redux/reducers.js';
 import { Provider } from 'react-redux';
 
-import ProdInfoPage from '../components/Catalogue/ProdInfoPage';
+import Product from '../components/Catalogue/Product';
 
 const prod = {
   "id": 1,
@@ -25,13 +25,13 @@ const prod = {
 
 let store=createStore(combinedReducer);
 
-test('внешний вид и работа ProdInfoPage', () => {
+test('внешний вид и работа Product', () => {
 
   // создаём тестовую версию компонента
   const component = renderer.create(
     <Router>
       <Provider store={store}>
-        <ProdInfoPage info = {prod} />
+        <Product info = {prod} />
       </Provider>
     </Router>
   );

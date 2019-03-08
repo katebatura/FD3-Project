@@ -30,6 +30,7 @@ class Header extends React.Component {
       if (e.target == catalogue && menu.classList.contains('main-menu_open') ) { 
         if(menu.classList.contains('catalogue-open')) { 
           menu.classList.remove('catalogue-open');
+          menu.classList.remove('main-menu_open');
           return
         }           
         e.preventDefault();
@@ -38,7 +39,8 @@ class Header extends React.Component {
       
       if(e.target != toggleButton && e.target != catalogue){
         menu.classList.remove('catalogue-open');
-        menu.classList.remove('main-menu_open');}
+        menu.classList.remove('main-menu_open');
+      }
     };
     
 

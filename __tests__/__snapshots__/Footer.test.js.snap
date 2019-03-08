@@ -1,0 +1,258 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`внешний вид Footer 1`] = `
+<footer
+  className="footer"
+>
+  <div
+    className="footer_shadow"
+  />
+  <div
+    className="footer-nav"
+  >
+    <div
+      className="footer-nav__block footer-nav__block1"
+    >
+      <h3
+        className="footer-nav__title"
+      >
+        Информация
+      </h3>
+      <ul
+        className="main-menu"
+      >
+        <li>
+          <a
+            aria-current={null}
+            className="PageLink"
+            href="/"
+            onClick={[Function]}
+            style={undefined}
+          >
+            Главная
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current={null}
+            className="PageLink catalogueLink"
+            href="/catalogue"
+            onClick={[Function]}
+            style={undefined}
+          >
+            Каталог
+          </a>
+          <ul
+            className="category-menu main-menu"
+          >
+            <li>
+              <a
+                aria-current={null}
+                className="CategoryLink PageLink"
+                href="/catalogue/industrial-oils"
+                onClick={[Function]}
+                style={undefined}
+              >
+                Масла индустриальные
+              </a>
+            </li>
+            <li>
+              <a
+                aria-current={null}
+                className="CategoryLink PageLink"
+                href="/catalogue/cars-oils"
+                onClick={[Function]}
+                style={undefined}
+              >
+                Моторные масла для легковых автомобилей
+              </a>
+            </li>
+            <li>
+              <a
+                aria-current={null}
+                className="CategoryLink PageLink"
+                href="/catalogue/trucks-oils"
+                onClick={[Function]}
+                style={undefined}
+              >
+                Моторные масла для грузовых автомобилей
+              </a>
+            </li>
+            <li>
+              <a
+                aria-current={null}
+                className="CategoryLink PageLink"
+                href="/catalogue/moto-tech-oils"
+                onClick={[Function]}
+                style={undefined}
+              >
+                Масла для мото-технки
+              </a>
+            </li>
+            <li>
+              <a
+                aria-current={null}
+                className="CategoryLink PageLink"
+                href="/catalogue/transmission-oils"
+                onClick={[Function]}
+                style={undefined}
+              >
+                Трансмиссионные масла
+              </a>
+            </li>
+            <li>
+              <a
+                aria-current={null}
+                className="CategoryLink PageLink"
+                href="/catalogue/agr-tech-oils"
+                onClick={[Function]}
+                style={undefined}
+              >
+                Масла для садовой и сельскохозяйственной техники
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a
+            aria-current={null}
+            className="PageLink"
+            href="/about"
+            onClick={[Function]}
+            style={undefined}
+          >
+            О нас
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current={null}
+            className="PageLink"
+            href="/contacts"
+            onClick={[Function]}
+            style={undefined}
+          >
+            Контакты
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current={null}
+            className="PageLink"
+            href="/cart"
+            onClick={[Function]}
+            style={undefined}
+          >
+            Корзина
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="footer-nav__block footer-nav__block2"
+    >
+      <h3
+        className="footer-nav__title"
+      >
+        Категории
+      </h3>
+      <ul
+        className="category-menu main-menu"
+      >
+        <li>
+          <a
+            aria-current={null}
+            className="CategoryLink PageLink"
+            href="/catalogue/industrial-oils"
+            onClick={[Function]}
+            style={undefined}
+          >
+            Масла индустриальные
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current={null}
+            className="CategoryLink PageLink"
+            href="/catalogue/cars-oils"
+            onClick={[Function]}
+            style={undefined}
+          >
+            Моторные масла для легковых автомобилей
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current={null}
+            className="CategoryLink PageLink"
+            href="/catalogue/trucks-oils"
+            onClick={[Function]}
+            style={undefined}
+          >
+            Моторные масла для грузовых автомобилей
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current={null}
+            className="CategoryLink PageLink"
+            href="/catalogue/moto-tech-oils"
+            onClick={[Function]}
+            style={undefined}
+          >
+            Масла для мото-технки
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current={null}
+            className="CategoryLink PageLink"
+            href="/catalogue/transmission-oils"
+            onClick={[Function]}
+            style={undefined}
+          >
+            Трансмиссионные масла
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current={null}
+            className="CategoryLink PageLink"
+            href="/catalogue/agr-tech-oils"
+            onClick={[Function]}
+            style={undefined}
+          >
+            Масла для садовой и сельскохозяйственной техники
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="footer-nav__block footer-nav__block3"
+    >
+      <h3
+        className="footer-nav__title"
+      >
+        Контакты
+      </h3>
+      <p>
+        г. Минск ул. Гурского 3Б
+      </p>
+      <p>
+        +375 (29) 682 10 32
+      </p>
+      <p>
+        Время работы 09:00-19:00
+      </p>
+      <p>
+        Без выходных
+      </p>
+    </div>
+  </div>
+  <div
+    className="footer-copyright"
+  >
+    © 2019 VseMasla. All rights reserved
+  </div>
+</footer>
+`;

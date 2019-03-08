@@ -8,30 +8,18 @@ import { createStore } from 'redux';
 import combinedReducer from '../redux/reducers.js';
 import { Provider } from 'react-redux';
 
-import ProdInfoPage from '../components/Catalogue/ProdInfoPage';
-
-const prod = {
-  "id": 1,
-  "name": "AZOLLA ZS 32",
-  "brand": "TOTAL",
-  "category": "Индустриальные масла",
-  "price": 1052.94,
-  "description": "Гидравлическое масло",
-  "imgUrl": "./img/bochka.jpg",
-  "qty": 1,
-  "sum": 1052.94
-};
-    
+import PaginationItem from '../components/Pagination/PaginationItem';
+  
 
 let store=createStore(combinedReducer);
 
-test('внешний вид и работа ProdInfoPage', () => {
+test('внешний вид и работа PaginationItem', () => {
 
   // создаём тестовую версию компонента
   const component = renderer.create(
     <Router>
       <Provider store={store}>
-        <ProdInfoPage info = {prod} />
+        <PaginationItem num = {1} startLink ={'/catalogue'}/>
       </Provider>
     </Router>
   );
@@ -40,5 +28,17 @@ test('внешний вид и работа ProdInfoPage', () => {
   let componentTree=component.toJSON();
   expect(componentTree).toMatchSnapshot();
 
+  // создаём 2 тестовую версию компонента
+  const component2 = renderer.create(
+    <Router>
+      <Provider store={store}>
+        <PaginationItem num = {5} startLink ={'/catalogue/category'}/>
+      </Provider>
+    </Router>
+  );
+
+  // получаем снэпшот (HTML-снимок) компонента для сверки, что вёрстка не испортилась
+  let componentTree2=component2.toJSON();
+  expect(componentTree2).toMatchSnapshot();
         
 });

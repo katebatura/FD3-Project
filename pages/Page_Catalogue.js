@@ -57,6 +57,10 @@ class Page_Catalogue extends React.PureComponent {
             });
         }
 
+    
+  }
+
+  componentWillUnmount() {
     this.props.dispatch( prod_filter('') );  
   }
 

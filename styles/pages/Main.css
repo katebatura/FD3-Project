@@ -13,6 +13,49 @@
     margin: auto;
 }
 
+.icon_container {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+.icon-box {
+    width: 30%;
+    padding: 35px 15px 15px;
+    box-sizing: border-box;
+    line-height: 20px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+.icon-box .fas, .icon-box .far {
+    color: white;
+    text-align: center;
+    font-size: 56px;
+    transition: all 1s ease-in-out ;
+}
+.icon-box_title {
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 0;
+}
+.icon-box1 {
+    background-color: #911391;
+}
+.icon-box2 {
+    background-color: #ff0a0a;
+}
+.icon-box3 {
+    background-color: #00b395;
+}
+.icon-box:hover {
+    background-color: #333333;
+}
+.icon-box:hover .icon-box_icon {
+    transform: scaleX(-1)
+}
+
 /*slick*/
 
 .slick-dots li button:before {
@@ -40,16 +83,39 @@
         font-size: 10px;
     }
 }
+@media (max-width: 840px) {
+    .icon_container {
+        flex-wrap: wrap;
+    }
+    .icon-box {
+        width: 45%;
+    }
+}
 
 @media (max-width: 540px) {
     .main .description {
         font-size: 14px;
         width: 100%;
     }
+    .icon_container {
+        flex-direction: column;
+    }
+    .icon-box {
+        width: 100%;
+    }
+    .icon-box .fas, .icon-box .far {
+        font-size: 40px;
+    }
 }
 
 @media (max-width: 340px) {
     .slick-dots li button:before {
         font-size: 7px;
+    }
+    .icon-box_title {
+        padding: 5px 0;
+    }
+    .icon-box .fas, .icon-box .far {
+        font-size: 30px;
     }
 }

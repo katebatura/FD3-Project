@@ -77,6 +77,28 @@ class Main extends React.PureComponent {
 
         </section>
 
+        <section className = "icon_container">
+
+          <div className = "icon-box icon-box1">
+            <i className="far fa-question-circle icon-box_icon"></i>
+            <h3 className = "icon-box_title">Консультации</h3>
+            <p className = "icon-box_text">Позвоните к нам и Вы получите бесплатную консультацию профессионалов, которые помогут подобрать масло, фильтра или любые другие запчасти на Ваш автомобиль.</p>
+          </div>
+
+          <div className = "icon-box icon-box2">
+            <i className="fas fa-american-sign-language-interpreting icon-box_icon"></i>
+            <h3 className = "icon-box_title">Гарантия качества</h3>
+            <p className = "icon-box_text">Вся продукция, которая представлена в нашем интернет-магазине является оригинальной. Товары имеют сертификаты соответстия и актуальный срок годности.</p>
+          </div>
+          
+          <div className = "icon-box icon-box3">
+            <i className="fas fa-globe icon-box_icon"></i>            
+            <h3 className = "icon-box_title">Доставка</h3>
+            <p className = "icon-box_text">Мы всегда можем доставить Вам товар в любую точку Минска, а также РБ. Ваше удобство - наша забота!</p>
+          </div>
+
+        </section>
+
         <section className="description">
           <h2 className="description__title">Добро пожаловать</h2>
           <p>Мы подобрали для вас широкий выбор масел для всех существующих моделей двигателей и марок машин. Приглашаем посетить наш <NavLink to="/catalogue">каталог</NavLink>, где вы можете ознакомиться с нашей продукцией, купить которую вы можете из имеющейся в наличии или под заказ. Если у Вас возникнут вопросы, позвоните нам и Вы получите бесплатную консультацию профессионалов, которые помогут подобрать масло, фильтра или любые другие запчасти на Ваш автомобиль.</p>
