@@ -12,7 +12,6 @@ const setLocalStorage = function (key, info) {
     let data = JSON.parse(cartString);
     data[key] = info;
     localStorage[name]  = JSON.stringify(data);
-    console.log(localStorage)
 };
 
 const editLocalStorage = function (key, info) {
@@ -21,7 +20,6 @@ const editLocalStorage = function (key, info) {
     let data = JSON.parse(cartString);
     data[key] = info;
     localStorage[name]  = JSON.stringify(data);
-    console.log(localStorage)
 };
 
 const delLocalStorage = function (key) {
@@ -30,12 +28,10 @@ const delLocalStorage = function (key) {
     let data = JSON.parse(cartString);
     delete data[key];
     localStorage[name]  = JSON.stringify(data);
-    console.log(localStorage)
 };
 
 const clearLocalStorage = function() {
     localStorage.removeItem( name);
-    console.log("remove")
 }
 
 const checkLocalStorage = function() {

@@ -8,7 +8,7 @@ import Order from './Order';
 
 import {connect} from 'react-redux';
 
-import './Cart_Full.css';
+import '../../styles/Cart/Cart_Full.css';
 
 class Cart_Full extends React.PureComponent {
   

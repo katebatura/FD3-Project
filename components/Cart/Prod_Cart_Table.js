@@ -11,7 +11,7 @@ import { qty_add, prod_del, sum_qty } from '../../redux/cartAC';
 import { delLocalStorage, editLocalStorage } from '../../services/LocalStorage';
 import { roundMod } from '../../services/roundMod';
 
-import './Prod_Cart_Table.css';
+import '../../styles/Cart/Prod_Cart_Table.css';
 
 class Prod_Cart_Table extends React.PureComponent {
   
@@ -31,6 +31,7 @@ class Prod_Cart_Table extends React.PureComponent {
   
 
   deleteProduct = () => {
+    
     this.props.dispatch( prod_del(this.props.info.id) ); 
     this.props.dispatch( sum_qty( - this.props.info.qty) );
 

@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 import {connect} from 'react-redux';
 import { prod_filter } from "../../redux/prodFilterAC";
 
-import './Search.css';
+import '../../styles/Header/Search.css';
 
 class Search extends React.Component {
           
@@ -23,7 +23,7 @@ class Search extends React.Component {
     }
     
     filterProds = (event) => {
-
+      
       if (this.newProdFilterRef.value == ''){
         this.setState( {failedProdFilter: true} )
         event.preventDefault();

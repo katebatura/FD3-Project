@@ -16,7 +16,7 @@ import PagesRouter from './pages/PagesRouter';
 import CategoriesLinks from './pages/CategoriesLinks';
 
 
-import './App.css';
+import './styles/App.css';
 
 
 let store=createStore(combinedReducer);

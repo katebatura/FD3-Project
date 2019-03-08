@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 
+import isoFetch from 'isomorphic-fetch';
+
 import {connect} from 'react-redux';
 import { productsLoadingAC, productsErrorAC, productsSetAC } from "../redux/productsAC";
 import { page_change } from "../redux/pageAC";
@@ -9,7 +11,7 @@ import { page_change } from "../redux/pageAC";
 import GoTopButton from '../components/GoTopButton';
 import {goTop} from '../services/GoTop';
 
-import isoFetch from 'isomorphic-fetch';
+import { convertLink } from '../services/LinkConverter';
 
 import PaginationPage from '../components/Pagination/PaginationPage';
 
@@ -67,7 +69,9 @@ class Page_Category extends React.PureComponent {
 
     if ( this.props.products.status === 3 ) {
 
-      let prodData = this.props.products.productsList.filter( prod => prod.category == this.props.category );
+      let link = convertLink(this.props.category);
+
+      let prodData = this.props.products.productsList.filter( prod => prod.category == link );
       let l = prodData.length;
 
       return (
@@ -79,13 +83,13 @@ class Page_Category extends React.PureComponent {
             <NavLink to="/catalogue" className="breadcrumbs">Каталог</NavLink>
             <span className="breadcrumbs-arr" > &rarr; </span>
             <NavLink to={"/catalogue/" + this.props.category} className="breadcrumbs">
-              {this.props.category}
+              {link}
             </NavLink>
           </div>
           <hr />
 
           {l > 0 ? 
-            <PaginationPage products = {prodData} startLink = {'/catalogue/' + this.props.category} /> : 
+            <PaginationPage products = {prodData} startLink = {'/catalogue/' + this.props.category} pagesQty = {1} /> : 
             <span>нет продуктов данной категории</span>}
 
           <GoTopButton />

@@ -444,15 +444,6 @@
 					"id": 50,
 					"name": "RUBIA TIR 8900 10W40 208L",
 					"brand": "TOTAL",
-					"category": "Моторное масло для грузовых автомобилей",
-					"price": 2370.44,
-					"description": "Масло моторное полусинтетическое",
-					"imgUrl": "./img/bochka.jpg"
-				},
-				{
-					"id": 50,
-					"name": "RUBIA TIR 8900 10W40 208L",
-					"brand": "TOTAL",
 					"category": "Индустриальные масла",
 					"price": 2234.1,
 					"description": "Масло моторное полусинтетическое",
@@ -700,5 +691,14 @@
 					"price": 48.95,
 					"description": "Масло моторное полусинтетическое",
 					"imgUrl": "./img/QUARTZ 7000 10W40 5L.jpg"
+				},
+				{
+					"id": 79,
+					"name": "RUBIA TIR 8900 10W40 208L",
+					"brand": "TOTAL",
+					"category": "Моторное масло для грузовых автомобилей",
+					"price": 2370.44,
+					"description": "Масло моторное полусинтетическое",
+					"imgUrl": "./img/bochka.jpg"
 				}
 			]

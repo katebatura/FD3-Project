@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`внешний вид Header_Cart 1`] = `
+<div
+  className="header__cart"
+>
+  <a
+    aria-current={null}
+    className="header__cart-link"
+    href="/cart"
+    onClick={[Function]}
+    style={undefined}
+  >
+    <i
+      className="fas fa-cart-arrow-down"
+    />
+  </a>
+</div>
+`;

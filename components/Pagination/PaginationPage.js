@@ -7,7 +7,7 @@ import { page_change } from "../../redux/pageAC";
 import PaginationItem from './PaginationItem';
 import Product from '../Catalogue/Product';
 
-import './PaginationPage.css';
+import '../../styles/pages/PaginationPage.css';
 
 class PaginationPage extends React.PureComponent {
          
@@ -15,6 +15,7 @@ class PaginationPage extends React.PureComponent {
     products: PropTypes.array.isRequired, //передан из родительского компонента
     startLink: PropTypes.string.isRequired, //передан из родительского компонента
     page: PropTypes.object.isRequired,
+    pagesQty: PropTypes.number.isRequired,//передан из родительского компонента разбивать ли на страницы
   };
 
   componentWillUnmount() {
@@ -22,22 +23,29 @@ class PaginationPage extends React.PureComponent {
   }
   
   render() {
-
-    let prodData = [];
-    let start = (this.props.page.page - 1) * 50; //по 50 продукта на странице
-    let end = this.props.page.page * 50;
-    for(let i = start; i < end; i++ ) {
-        if(this.props.products[i])
-          prodData.push(this.props.products[i]);
-    }   
-  
-    let l = this.props.products.length;
-
+    
+    let prodData;
     let pageArr = [];
-    let pageQty = Math.ceil(l / 50);//по 50 продукта на странице
-    for(let i = 1; i <= pageQty; i++) {        
-        pageArr.push(<PaginationItem key = {i} num = {i} startLink = {this.props.startLink} />)
-      }
+
+    if(this.props.pagesQty == 1) {
+      prodData = [];
+      let start = (this.props.page.page - 1) * 25; //по 25 продукта на странице
+      let end = this.props.page.page * 25;
+      for(let i = start; i < end; i++ ) {
+          if(this.props.products[i])
+            prodData.push(this.props.products[i]);
+      }   
+    
+      let l = this.props.products.length;
+
+      pageArr = [];
+      let pageQty = Math.ceil(l / 25);//по 25 продукта на странице
+      for(let i = 1; i <= pageQty; i++) {        
+          pageArr.push(<PaginationItem key = {i} num = {i} startLink = {this.props.startLink} />)
+        }
+    } else {
+      prodData = this.props.products
+    }
 
 
     let productsArr = [];

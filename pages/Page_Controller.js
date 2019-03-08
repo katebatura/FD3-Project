@@ -12,13 +12,13 @@ class Page_Controller extends React.PureComponent {
   render() {
     
     let param = this.props.match.params.param;
-
+    
     if(param && param.indexOf('page') == -1)
       return <Page_Category category = {param} />
-   
+       
 
     if(param && param.indexOf('page') > -1){
-      return <Page_Catalogue page = {parseInt(param)} />       
+      return <Page_Catalogue page = {parseInt(param)}/>       
      }
     
 

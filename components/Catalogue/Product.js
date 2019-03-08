@@ -12,7 +12,7 @@ import { roundMod } from '../../services/roundMod';
 
 import OkButton from './OkButton'
 
-import './Product.css';
+import '../../styles/Catalogue/Product.css';
 
 class Product extends React.PureComponent {
   

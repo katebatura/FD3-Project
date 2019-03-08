@@ -3,7 +3,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './GoTopButton.css'
+import '../styles/GoTopButton.css'
 
 class GoTopButton extends React.Component {
 

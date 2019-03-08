@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`внешний вид и работа ProdInfoPage 1`] = `
+<div>
+  <div
+    className="breadcrumbs-container"
+  >
+    <a
+      aria-current={null}
+      className="breadcrumbs"
+      href="/"
+      onClick={[Function]}
+      style={undefined}
+    >
+      Главная 
+    </a>
+    <span
+      className="breadcrumbs-arr"
+    >
+       → 
+    </span>
+    <a
+      aria-current={null}
+      className="breadcrumbs"
+      href="/catalogue"
+      onClick={[Function]}
+      style={undefined}
+    >
+      Каталог
+    </a>
+    <span
+      className="breadcrumbs-arr"
+    >
+       → 
+    </span>
+    <a
+      aria-current={null}
+      className="breadcrumbs"
+      href="/catalogue/Индустриальные масла"
+      onClick={[Function]}
+      style={undefined}
+    >
+      Индустриальные масла
+    </a>
+    <span
+      className="breadcrumbs-arr"
+    >
+       → 
+    </span>
+    <a
+      aria-current={null}
+      className="breadcrumbs"
+      href="/catalogue/Индустриальные масла/1"
+      onClick={[Function]}
+      style={undefined}
+    >
+      AZOLLA ZS 32
+    </a>
+  </div>
+  <hr />
+  <h2
+    className="productPage-title"
+  >
+    AZOLLA ZS 32
+  </h2>
+  <div
+    className="productPage-container"
+  >
+    <div
+      className="productPage-img-container"
+    >
+      <img
+        className="productPage-img"
+        src="./img/bochka.jpg"
+      />
+    </div>
+    <div
+      className="productPage-info"
+    >
+      <p>
+        Индустриальные масла
+      </p>
+      <p>
+        TOTAL
+      </p>
+      <p>
+        Гидравлическое масло
+      </p>
+      <p
+        className="productPage-price"
+      >
+        1052.94 руб.
+      </p>
+      <div
+        className="addCart-block"
+      >
+        <input
+          className="addQty_button"
+          defaultValue={1}
+          min="0"
+          step="1"
+          title="Кол-во"
+          type="number"
+        />
+        <button
+          className="addCart_button"
+          onClick={[Function]}
+        >
+          <i
+            className="fas fa-cart-arrow-down"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -9,7 +9,7 @@ import Header_Cart from './Header_Cart';
 import Logo from './Logo';
 import Search from './Search';
 
-import './Header.css';
+import '../../styles/Header/Header.css';
 
 class Header extends React.Component {
 

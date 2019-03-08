@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import PagesLinks from '../../pages/PagesLinks';
 import CategoriesLinks from '../../pages/CategoriesLinks';
 
-import './Footer.css';
+import '../../styles/Footer/Footer.css';
 
 class Footer extends React.PureComponent {
 

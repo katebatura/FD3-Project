@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom';
 import {connect} from 'react-redux';
 import { productsLoadingAC, productsErrorAC, productsSetAC } from "../redux/productsAC";
 import { page_change } from "../redux/pageAC";
+import { prod_filter } from "../redux/prodFilterAC";
 
 import GoTopButton from '../components/GoTopButton';
 import {goTop} from '../services/GoTop';
@@ -29,6 +30,9 @@ class Page_Catalogue extends React.PureComponent {
     $(function() {
       $("#go-top").scrollToTop(); //import from goTop
       });
+
+    if(this.props.page)//если page пришла из контроллера, заменим ее в редьюсере        
+      this.props.dispatch( page_change(this.props.page) );//если нету, то по умолчанию оставим - 1
       
     if(!this.props.products.productsList){
 
@@ -53,10 +57,9 @@ class Page_Catalogue extends React.PureComponent {
             });
         }
 
-        if(this.props.page)//если page пришла из контроллера, заменим ее в редьюсере        
-          this.props.dispatch( page_change(this.props.page) );//если нету, то по умолчанию оставим - 1
-
+    this.props.dispatch( prod_filter('') );  
   }
+
           
   render() {
 
@@ -79,9 +82,11 @@ class Page_Catalogue extends React.PureComponent {
             <NavLink to="/catalogue" className="breadcrumbs">Каталог</NavLink>
           </div>
           <hr />
+          {this.props.prodFilter.prodFilter ? <h2 className="page-title">Результаты поиска</h2> : null}
 
           {filterProductsList.length > 0 ?
-            <PaginationPage products = {filterProductsList}  startLink = {'/catalogue'} />
+            <PaginationPage products = {filterProductsList}  startLink = {'/catalogue'}
+             pagesQty = {this.props.prodFilter.prodFilter !== '' ? 0: 1}/>
             :<span>Поиск не дал результатов</span>
           }
 

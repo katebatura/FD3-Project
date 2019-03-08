@@ -11,8 +11,8 @@ import { checkNameValue, checkEmailValue, checkTelValue  } from '../../services/
 
 import Order_Table from './Order_Table';
 
-import './Order.css';
-import './Order_Table.css';
+import '../../styles/Cart/Order.css';
+import '../../styles/Cart/Order_Table.css';
 
 class Order extends React.PureComponent {
   

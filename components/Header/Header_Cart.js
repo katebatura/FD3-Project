@@ -8,7 +8,7 @@ import {connect} from 'react-redux';
 
 import { clearLocalStorage } from '../../services/LocalStorage'
 
-import './Header_Cart.css';
+import '../../styles/Header/Header_Cart.css';
 
 class Header_Cart extends React.PureComponent {
  

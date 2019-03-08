@@ -9,7 +9,7 @@ import {goTop} from '../services/GoTop';
 
 import { checkNameValue, checkEmailValue, checkTelValue, checkTextValue  } from '../services/checkForm';
 
-import './Contacts.css';
+import '../styles/pages/Contacts.css';
 
 class Page_Contacts extends React.PureComponent {
           

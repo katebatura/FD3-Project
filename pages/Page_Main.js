@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 import GoTopButton from '../components/GoTopButton'
 import {goTop} from '../services/GoTop'
 
-import './Main.css';
+import '../styles/pages/Main.css';
 
 class Main extends React.PureComponent {
 

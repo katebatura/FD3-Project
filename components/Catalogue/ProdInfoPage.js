@@ -9,8 +9,9 @@ import { prod_add, sum_qty } from '../../redux/cartAC';
 
 import { setLocalStorage } from '../../services/LocalStorage';
 
-import './Product.css';
-import './ProdInfoPage.css';
+import { convertLink } from '../../services/LinkConverter';
+
+import '../../styles/Catalogue/ProdInfoPage.css';
 
 
 class ProdInfoPage extends React.PureComponent {
@@ -44,15 +45,17 @@ class ProdInfoPage extends React.PureComponent {
     let sum = qty * this.props.info.price;
     let info = {...this.state.info, qty: qty, sum: sum};
 
-    this.props.dispatch( prod_add(this.state.info.name, info) ); //добавляем в корзину
+    this.props.dispatch( prod_add(this.state.info.id, info) ); //добавляем в корзину
     this.props.dispatch( sum_qty(qty) ); //добавляем количество продуктов в корзине для отображения в header
 
-    setLocalStorage(this.state.info.name, info);
+    setLocalStorage(this.state.info.id, info);
 
     this.setState( {inCart:1} );
   }
   
   render() {
+
+    let link = convertLink(this.props.info.category);
 
     return (
       <div>
@@ -62,11 +65,11 @@ class ProdInfoPage extends React.PureComponent {
             <span className="breadcrumbs-arr" > &rarr; </span>
             <NavLink to="/catalogue" className="breadcrumbs">Каталог</NavLink>
             <span className="breadcrumbs-arr" > &rarr; </span>
-            <NavLink to={"/catalogue/" + this.props.info.category} className="breadcrumbs">
+            <NavLink to={"/catalogue/" + link} className="breadcrumbs">
               {this.props.info.category}
             </NavLink>
             <span className="breadcrumbs-arr" > &rarr; </span>
-            <NavLink to={"/catalogue/" + this.props.info.category + "/" + this.props.info.id} className="breadcrumbs">
+            <NavLink to={"/catalogue/" + link + "/" + this.props.info.id} className="breadcrumbs">
               {this.props.info.name}
             </NavLink>
           </div>

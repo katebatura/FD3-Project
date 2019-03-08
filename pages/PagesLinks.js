@@ -6,7 +6,7 @@ import CategoriesLinks from './CategoriesLinks';
 
 import {events} from '../services/events';
 
-import './PagesLinks.css';
+import '../styles/pages/PagesLinks.css';
 
 class PagesLinks extends React.Component {
           
