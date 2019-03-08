@@ -8,7 +8,7 @@
     "buildprod": "cross-env NODE_ENV=production .//node_modules//.bin//webpack --progress",
     "browse": ".\\node_modules\\.bin\\lite-server",
     "test": "jest",
-    "start": "node App.js"
+    "start": "node ./public/App.js"
   },
   "jest": {
     "moduleNameMapper": {
@@ -16,6 +16,10 @@
       "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
     }
   },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
   "author": "Nogovitsyna",
   "license": "ISC",
   "devDependencies": {
