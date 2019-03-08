@@ -8,7 +8,7 @@
     "buildprod": "cross-env NODE_ENV=production .//node_modules//.bin//webpack --progress",
     "browse": ".\\node_modules\\.bin\\lite-server",
     "test": "jest",
-    "start": "node App.js"
+    "start": "webpack -p App.js"
   },
   "jest": {
     "moduleNameMapper": {
