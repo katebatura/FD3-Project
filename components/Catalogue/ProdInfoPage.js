@@ -56,6 +56,7 @@ class ProdInfoPage extends React.PureComponent {
   render() {
 
     let link = convertLink(this.props.info.category);
+    console.log(link)
 
     return (
       <div>

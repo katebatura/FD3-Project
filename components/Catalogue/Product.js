@@ -12,6 +12,8 @@ import { roundMod } from '../../services/roundMod';
 
 import OkButton from './OkButton'
 
+import { convertLink } from '../../services/LinkConverter';
+
 import '../../styles/Catalogue/Product.css';
 
 class Product extends React.PureComponent {
@@ -54,15 +56,16 @@ class Product extends React.PureComponent {
   }
   
   render() {
+    let link = convertLink(this.props.info.category);
 
     return (
         <div className="product-wrap">
           <h3>
-            <NavLink to = {"/catalogue/"+ this.props.info.category + "/" + this.props.info.id} className = "product-title">
+            <NavLink to = {"/catalogue/"+ link + "/" + this.props.info.id} className = "product-title">
               {this.props.info.name}
             </NavLink>
           </h3>
-          <NavLink to = {"/catalogue/"+ this.props.info.category + "/" + this.props.info.id} className = "product-title product-img-container">
+          <NavLink to = {"/catalogue/"+ link + "/" + this.props.info.id} className = "product-title product-img-container">
             <img src = {this.props.info.imgUrl} className = "product-img" />
           </NavLink>
           <p>{this.props.info.price + " руб."}</p>
